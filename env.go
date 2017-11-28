@@ -12,13 +12,15 @@ const vcapServicesEnv = "VCAP_SERVICES"
 // Bind will take each of the Cloud Foundry service credentials found in
 // the VCAP_SERVICES environment variable and put each services's credential
 // value in the environment using setenv.
+//
 // In order to avoid conflicts across services that have a credential with the
-// same name (e.g. `service-1`` and `service-2`` both have a credential named
+// same name (e.g. `service-1` and `service-2` both have a credential named
 // `API_KEY`), each environment variable is prefixed with a transformed service
 // name. Credential name will also be transformed - this is because it is
 // conventional for environment variables to be upper case. E.g. for the
 // `service-1` credential `api-key`, the resulting environment variable will be
 // named `SERVICE_1_API_KEY`.
+//
 // It is assumed that the service `credentials` is a map of key/value pairs. If
 // it is not, that service will simply be ignored.
 // Each credential value is converted to a string using the %v verb from fmt. In
