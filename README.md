@@ -17,8 +17,8 @@ your Go program does not need any special treatment when used within CF.
 
 ## Usage and examples
 
-[Read the documentation](https://godoc.org/github.com/govau/cfsvcenv).
-[Example](https://godoc.org/github.com/govau/cfsvcenv/tree/master/example).
+* [Read the documentation](https://godoc.org/github.com/govau/cfsvcenv)
+* [Example](https://godoc.org/github.com/govau/cfsvcenv/tree/master/example)
 
 ## Caveats
 
